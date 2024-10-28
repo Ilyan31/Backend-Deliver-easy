@@ -1,11 +1,13 @@
 import express from 'express';
 import cors from 'cors';
+import routerDelivery  from './routes/deliveryRoutes';
 
 const app = express();
-const port = 8889;  // Port mis à jour
+const port = 3000;  // Port mis à jour
 
 app.use(cors());
 app.use(express.json());
+app.use('/deliveries',routerDelivery); 
 
 // Route de base avec un message de débogage
 app.get('/', (req, res) => {

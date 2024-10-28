@@ -1,0 +1,46 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": false
+                }
+            },
+            "previewLimit": 50,
+            "server": "tiresomely-breezy-condor.data-1.use1.tembo.io",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "database": "postgres",
+            "username": "user_concurrent",
+            "name": "Pasco 1"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": false
+                }
+            },
+            "previewLimit": 50,
+            "server": "tiresomely-breezy-condor.data-1.use1.tembo.io",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Pasco 2",
+            "database": "postgres",
+            "username": "user_concurrent"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "test",
+            "database": "delivereasy",
+            "username": "root",
+            "password": "root"
+        }
+    ]
+}
