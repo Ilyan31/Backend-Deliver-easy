@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 
 const app = express();
-const port = 3360;  // Port mis à jour
+const port = 8889;  // Port mis à jour
 
 app.use(cors());
 app.use(express.json());
