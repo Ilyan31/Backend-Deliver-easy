@@ -1,19 +1,17 @@
 import express from 'express';
-import dotenv from 'dotenv';
 import cors from 'cors';
-import authRoutes from './routes/authRoutes';
-import deliveryRoutes from './routes/deliveryRoutes';
 
-dotenv.config();
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3360;  // Port mis à jour
 
 app.use(cors());
 app.use(express.json());
 
-// Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/deliveries', deliveryRoutes);
+// Route de base avec un message de débogage
+app.get('/', (req, res) => {
+  console.log("Route / appelée");  // Message de débogage pour confirmer l'accès
+  res.send("Bienvenue sur l'API Deliver'easy !");
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
